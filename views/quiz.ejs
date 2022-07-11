@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <ol>
+    <% for(let i =0; i<task.length; i++){ %>
+        <li> <p><%= task[i].taskName%> <a href="/quiz/<%=task[i]._id%>">Start</a></p>  </li>
+  <%  } %>
+  </ol>
+  </body>
+</html>

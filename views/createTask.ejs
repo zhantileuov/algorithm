@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h1>Create Task</h1>
+  <hr>
+  <form action="/hel" method="post">
+    <label>Task name: </label>
+    <input type="text" name="taskName" placeholder="name"><br>
+    <hr>
+      <label>Task Scenario:</label><br>
+      <textarea name="taskDescription" rows="8" cols="80"></textarea>
+      <div id="step-input">
+        <div class="step">
+          <input type="text" name="step 0" value="" size="50" placeholder="Step 0">
+          <select  name="step 0">
+            <option value='not critical'>not critical</option>
+            <option value='critical'>critical</option>
+          </select>
+
+          <input type="number" name="step 0" min="10" max="100">
+        </div>
+
+        <!-- New input elements -->
+      </div>
+<br>
+      <div class="controls">
+        <button type="button"  id="add_more_fields">Add </button>
+        <button type="button" name="button" id="remove_fields">Remove</button>
+      </div>
+      <br>
+      <hr>
+    <button type="submit" >Submit</button>
+  </form>
+
+<script src="js/form.js"></script>
+</body>
+</html>

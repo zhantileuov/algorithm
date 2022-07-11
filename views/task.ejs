@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <label>Student NO:</label>
+  <input type="text" name="" value="">
+  <h1><%=task.taskName%></h1>
+  <h4><%=task.taskScenario%></h4>
+  <table>
+    <tr>
+      <th>Steps</th>
+      <th>True</th>
+      <th>Flase</th>
+      <hr>
+    </tr>
+
+
+    <%task.steps.forEach(function(element){ %>
+    <tr>
+      <td><label><%=element.stepDescr%></label></td>
+      <td> <input type="checkbox" name="" value=""></td>
+      <td> <input type="checkbox" name="" value=""></td>
+
+    </tr>
+
+    <!-- <p><%=element.category%></p> -->
+    <%})%>
+  </table>
+  <br>
+  <hr>
+  Total:
+  <hr>
+  <button type="button" name="button">Finish</button>
+
+</body>
+
+</html>
